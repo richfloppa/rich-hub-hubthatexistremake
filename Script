@@ -8,7 +8,12 @@ game:GetService("GuiService"):ClearError()
 
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/ionlyusegithubformcmods/1-Line-Scripts/main/Mobile%20Friendly%20Orion')))()
 
-if game.PlaceId == <killstreak only ID here> or game.PlaceId == <Slap Battles ID here> or game.PlaceId == <No one shot gloves ID here> then
+local killstreakOnlyID = ""
+local slapBattlesID = ""
+local noOneShotGlovesID = ""
+local slapRoyaleID = ""
+
+if game.PlaceId == killstreakOnlyID or game.PlaceId == slapBattlesID or game.PlaceId == noOneShotGlovesID then
 local bypass;
     bypass = hookmetamethod(game, "__namecall", function(method, ...) 
         if getnamecallmethod() == "FireServer" and method == game.ReplicatedStorage.Ban then
@@ -39,7 +44,7 @@ TournamentAntiVoid.Anchored = true
 end
 end
 
-if game.PlaceId == <slap royale ID here> then
+if game.PlaceId == slapRoyaleID then
 local bypass;
     bypass = hookmetamethod(game, "__namecall", function(method, ...) 
         if getnamecallmethod() == "FireServer" and method == game.ReplicatedStorage.Events.Ban then
@@ -760,7 +765,7 @@ task.wait()
 	end    
 })
 
-elseif game.PlaceId == <killstreak only ID here> then
+elseif game.PlaceId == killstreakOnlyID then
                 
                 local Window = OrionLib:MakeWindow({Name = "Slap Battles Rich Hub | Killstreak Only", HidePremium = true, IntroEnabled = false, SaveConfig = false, ConfigFolder = "OrionTest"})
 
@@ -1833,7 +1838,7 @@ elseif game.PlaceId == 11828384869 then
                     PremiumOnly = false
                 })
 
-Tab:AddLabel("Message Guy that exists#1915 if you have issues")
+Tab:AddLabel("Message my dick if you have any issues")
 
 Tab:AddButton({
 	Name = "Infinite Yield",
@@ -2217,7 +2222,7 @@ game:GetService("TeleportService"):Teleport(game.PlaceId)
 Tab:AddButton({
 	Name = "TP back to Slap Battles",
 	Callback = function()
-      		game:GetService("TeleportService"):Teleport(6403373529)
+      		game:GetService("TeleportService"):Teleport(slapBattlesID)
   	end    
 })
 
@@ -3668,10 +3673,10 @@ wait(0.25)
 fireclickdetector(game.Workspace.Map.OriginOffice.Door.Keypad.Buttons[fourth].ClickDetector)
 wait(0.25)
 fireclickdetector(game.Workspace.Map.OriginOffice.Door.Keypad.Buttons.Enter.ClickDetector)
-game:GetService("TeleportService"):Teleport(6403373529)
+game:GetService("TeleportService"):Teleport(slapBattlesID)
     ]])
 end
-game:GetService("TeleportService"):Teleport(9431156611)
+game:GetService("TeleportService"):Teleport(slapRoyaleID)
 end
   	end    
 })
