@@ -70,7 +70,7 @@ AntiAcid.Anchored = true
 AntiAcid.Transparency = 1
 AntiLava.CanCollide = false
                 
-                local Window = OrionLib:MakeWindow({Name = "Slap Battles hub that exists | Slap Royale", HidePremium = true, IntroEnabled = false, SaveConfig = false, ConfigFolder = "OrionTest"})
+                local Window = OrionLib:MakeWindow({Name = "Slap Battles Rich Hub | Slap Royale", HidePremium = true, IntroEnabled = false, SaveConfig = false, ConfigFolder = "OrionTest"})
 
                 local Tab = Window:MakeTab({
                     Name = "Home",
@@ -760,9 +760,9 @@ task.wait()
 	end    
 })
 
-elseif game.PlaceId == 11520107397 then
+elseif game.PlaceId == <killstreak only ID here> then
                 
-                local Window = OrionLib:MakeWindow({Name = "Slap Battles hub that exists | Killstreak Only", HidePremium = true, IntroEnabled = false, SaveConfig = false, ConfigFolder = "OrionTest"})
+                local Window = OrionLib:MakeWindow({Name = "Slap Battles Rich Hub | Killstreak Only", HidePremium = true, IntroEnabled = false, SaveConfig = false, ConfigFolder = "OrionTest"})
 
                 local Tab = Window:MakeTab({
                     Name = "Home",
@@ -800,7 +800,7 @@ elseif game.PlaceId == 11520107397 then
                     PremiumOnly = false
                 })
 
-Tab:AddLabel("Message Guy that exists#1915 if you have issues")
+Tab:AddLabel("Message my dick if you have any issues")
 
 Tab:AddButton({
 	Name = "Infinite Yield",
@@ -1807,7 +1807,7 @@ end)
 
 elseif game.PlaceId == 11828384869 then
                 
-                local Window = OrionLib:MakeWindow({Name = "Slap Battles hub that exists | Elude Maze", HidePremium = true, IntroEnabled = false, SaveConfig = false, ConfigFolder = "OrionTest"})
+                local Window = OrionLib:MakeWindow({Name = "Slap Battles Rich Hub | Elude Maze", HidePremium = true, IntroEnabled = false, SaveConfig = false, ConfigFolder = "OrionTest"})
 
                 local Tab = Window:MakeTab({
                     Name = "Home",
@@ -2165,7 +2165,7 @@ end
 
 elseif game.PlaceId == 9020359053 or game.PlaceId == 9412268818 then
                 
-                local Window = OrionLib:MakeWindow({Name = "Slap Battles hub that exists | Testing Server", HidePremium = true, IntroEnabled = false, SaveConfig = false, ConfigFolder = "OrionTest"})
+                local Window = OrionLib:MakeWindow({Name = "Slap Battles Rich Hub | Testing Server", HidePremium = true, IntroEnabled = false, SaveConfig = false, ConfigFolder = "OrionTest"})
 
                 local Tab = Window:MakeTab({
                     Name = "Home",
@@ -2277,7 +2277,7 @@ end
                     PremiumOnly = false
                 })
 
-Tab:AddLabel("Message Guy that exists#1915 if you have issues")
+Tab:AddLabel("Message my dick if you have any issues")
 
 Tab:AddButton({
 	Name = "Infinite Yield",
