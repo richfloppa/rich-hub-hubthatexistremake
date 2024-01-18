@@ -894,26 +894,32 @@ end
 end
                 })
 
+-- Add a toggle to the "Tab2" UI element
 Tab2:AddToggle({
-                    Name = "Slap Aura",
-                    Default = false,
-                    Callback = function(Value)
-SlapAura = Value
-                while SlapAura do
-for i,v in pairs(game.Players:GetChildren()) do
-                    if v ~= game.Players.LocalPlayer and game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart") and v.Character then
-if v.Character:FindFirstChild("entered") and v.Character:FindFirstChild("HumanoidRootPart") then
-Magnitude = (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - v.Character.HumanoidRootPart.Position).Magnitude
-                        if 25 >= Magnitude then
-game.ReplicatedStorage.KSHit:FireServer(v.Character:WaitForChild("HumanoidRootPart"))
+    Name = "Slap Aura", -- Name of the toggle
+    Default = false, -- Initial toggle state
+    Callback = function(Value) -- Function to be called when the toggle state changes
+        SlapAura = Value -- Set the SlapAura variable to the new toggle state
+
+        -- Main loop that runs while the toggle is on
+        while SlapAura do
+            for i, v in ipairs(game.Players:GetChildren()) do -- Iterate through all players in the game
+                if v ~= game.Players.LocalPlayer and game.Players.LocalPlayer.Character and v.Character then -- Exclude the local player and check if both players have characters
+                    if v.Character:FindFirstChild("entered") and v.Character:FindFirstChild("HumanoidRootPart") then -- Check if the other player's character has "entered" and "HumanoidRootPart" objects
+                        Magnitude = (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - v.Character.HumanoidRootPart.Position).Magnitude -- Calculate the distance between the local player and the other player
+
+                        if 25 >= Magnitude then -- If the distance is less than or equal to 25 studs
+                            game.ReplicatedStorage.KSHit:FireServer(v.Character:WaitForChild("HumanoidRootPart")) -- Call the "KSHit" remote event on the ReplicatedStorage service, passing the other player's HumanoidRootPart as an argument
+                        end
                     end
-end
-end
                 end
-task.wait()
-end
-end
-                })
+            end
+
+            -- Wait for 2 seconds before the next iteration
+            task.wait(2)
+        end
+    end,
+})
 
 Tab2:AddButton({
 	Name = "Godmode (Resets character) (Breaks killstreak)",
