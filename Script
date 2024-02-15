@@ -9,7 +9,7 @@ game:GetService("GuiService"):ClearError()
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/ionlyusegithubformcmods/1-Line-Scripts/main/Mobile%20Friendly%20Orion')))()
 
 local killstreakOnlyID = "11520107397"
-local slapBattlesID = ""
+local slapBattlesID = "6403373529"
 local noOneShotGlovesID = ""
 local slapRoyaleID = ""
 
